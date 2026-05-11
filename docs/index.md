@@ -4,22 +4,21 @@ layout: home
 
 hero:
   name: "MusicFree"
-  text: "MusicFree Site"
-  tagline: My great project tagline
+  text: "自由的听歌"
+  tagline: 这里有关于音乐所有，all in all
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 特性
+      link: /feature
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 扩展
+      link: /plugin
 
 features:
-  - title: Feature A
+  - title: 开放的音乐管理功能
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: 音乐元数据刮削
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 插件化扩展
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
