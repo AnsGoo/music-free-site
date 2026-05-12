@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "MusicFree"
-  text: "自由的听歌"
+  text: "让听歌这件事变得简单一点"
   tagline: 这里有关于音乐所有，all in all
   actions:
     - theme: brand

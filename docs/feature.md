@@ -1,85 +1,9 @@
-# Markdown Extension Examples
+# MusicFree
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+曾几何时你为了听音乐无损音乐要搭建各种各样服务，「音乐媒体管理」用[navidrome](https://www.navidrome.org/),「音乐标刮削」用[MusicTagWeb](https://xiers-organization.gitbook.io/music-tag-web-v2),「音乐搜索和下载」用[MusicDl](https://musicdl.readthedocs.io/en/latest/),就为了听个歌我要废这么大的劲？有没有更好的,有没有一个All in all的方式，让听歌这件事变得简单一点。
 
-## Syntax Highlighting
+## 功能特性
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+不管是正在使用任何音乐服务器，我们和其他的音乐服务器没什么不同，我们提供了音乐全生命周期的管理功能，从音乐在线搜索、下载、去重、播放，到音乐封面、歌词的补齐，从歌单到音乐，从专辑到艺术家的全补功能
 
-**Input**
-
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+我们也不打算去更改用户的使用习惯，我们支持完整OpenSubSonic 和部分Navidrome风格的音乐API，因此不管是你在andriod上使用[音流](https://music.aqzscn.cn/)，还是鸿蒙上使用[云净听]，或者其他播放器，只要是符合OpenSubSonic 规范的播放器我们统统支持
