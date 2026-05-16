@@ -24,3 +24,8 @@ yarn-error.log*
 
 .pnpm-store/*
 
+# VitePress
+docs/.vitepress/cache/
+
+dist
+

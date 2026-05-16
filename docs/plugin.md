@@ -1,49 +1,27 @@
----
-outline: deep
----
+# MusicFree 插件
 
-# Runtime API Examples
+**插件是MusicFree的核心功能，插件让MusicFree有了无限的可能**
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+- MusicFree的音乐`在线搜索`和`在线下载`功能依赖第三方插件实现 `RemoteSeach`和`RemoteDownload`接口
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+- MusicFee的音乐作品的`基本信息刮削`、`封面刮削`、`歌词刮削`功能依赖第三方插件实现`ScraperSong`、 `GetCover`和`GetLyrics`的接口
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+- MusicFee的音乐作品的基艺术家信息匹配功能依赖第三方插件实现`GetArtistInfo`的接口实现
 
-const { theme, page, frontmatter } = useData()
-</script>
+- MusicFree的歌单同步依赖于第三方插件实现`FetchPlaylist`的接口
 
-## Results
+后期MusicFree和第三方平台的交互基本也是基于插件实现
 
-### Theme Data
-<pre>{{ theme }}</pre>
+![](./img/remote-seach.png)
 
-### Page Data
-<pre>{{ page }}</pre>
+## 插件商店
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
+插件商店中收录了各种各样的插件让用户选择，MusicFree允许用户订阅第三方插件注册表，实现插件商店扩充
 
-<script setup>
-import { useData } from 'vitepress'
+![](./img/plugin-store.png)
 
-const { site, theme, page, frontmatter } = useData()
-</script>
+## 插件编排
 
-## Results
+当用户订阅相同功能的多个插件时，MusicFree允许对多个相同功能的插件插件进行编排，从而确定功能在执行过程中的优先级
 
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+![](./img/plugin-orin.png)
