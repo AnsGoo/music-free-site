@@ -1,4 +1,12 @@
-# API
+---
+outline: deep
+---
+
+# OpenSubsonic API
+
+MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明。认证细节见 [用户模块](/user)；Navidrome 风格 REST 见 [Navidrome API](/navidrome-api)。
+
+---
 
 ## 支持的认证方式
 

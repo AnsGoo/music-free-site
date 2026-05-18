@@ -1,39 +1,50 @@
-# MusicFree
+---
+outline: deep
+---
 
-曾几何时你为了听音乐无损音乐要搭建各种各样服务，
+# MusicFree 功能特性
 
-- 「音乐媒体管理」用[Navidrome](https://www.navidrome.org/),
-- 「音乐标刮削」用[MusicTagWeb](https://xiers-organization.gitbook.io/music-tag-web-v2),
-- 「音乐搜索和下载」用[MusicDL](https://musicdl.readthedocs.io/en/latest/),
+曾几何时，想听无损音乐往往要分别搭建多套服务：
 
-有没有更好的,有没有一个All in all的方式，**让听歌这件事变得简单一点**。
+- **媒体库管理**：[Navidrome](https://www.navidrome.org/)
+- **标签刮削**：[MusicTagWeb](https://xiers-organization.gitbook.io/music-tag-web-v2)
+- **搜索与下载**：[MusicDL](https://musicdl.readthedocs.io/en/latest/)
+
+MusicFree 希望用 **All in One** 的方式，**让听歌这件事变得简单一点**。
 
 ## 扩展性
 
-我们提供了音乐全生命周期的管理功能
+提供音乐全生命周期的管理能力：
 
-我们不仅支持基本音乐、专辑、艺术的管理功能，还支持各种各样的扩展功能，例如：
+- 从 **在线搜索** 到 **下载入库**，便捷获取曲目
+- 从 **去重** 到多格式 **播放**，完整的曲库维护
+- 从 **封面** 到 **歌词** 的刮削，补全歌曲信息
+- 支持各平台 **歌单同步**（链接导入与定时同步）
+- 支持艺术家、专辑的 **匹配与刮削**，自动补全头像与简介
 
-- 从音乐的`在线搜索`到`下载`，便捷的音乐获取功能
-- 从音乐的`去重`到各种格式的`播放`，全功能的音乐管理，
-- 从音乐的`封面`到`歌词`的刮削，我们提供完整的歌曲信息匹配能力，
-- 我们支持各种平台的`歌单同步`功能，
-- 我们支持艺术家、专辑全功能的信息`匹配`与`刮削`，自动帮你补全艺术家的头像、简介
+上述扩展能力均通过 **[插件](/plugin)** 实现，可按需订阅注册表、安装不同插件组合。
 
-关键是这里所有的扩展功能我们都是通过`插件实现`，因此你可以使用各种各样的插件实现自己想要的功能
+| 场景                   | 文档                                                                          |
+| ---------------------- | ----------------------------------------------------------------------------- |
+| 音乐搜索 / 去重 / 刮削 | [音乐管理](/music)                                                            |
+| 专辑浏览与专辑级刮削   | [专辑](/album)                                                                |
+| 艺术家与批量头像       | [艺术家](/artist)                                                             |
+| 歌单导入与同步         | [歌单](/playlist)                                                             |
+| 插件安装与编排         | [插件](/plugin) · [注册表](/plugin-registry) · [插件合集](/plugin-collection) |
 
 ## 兼容性
 
-我们支持完整`OpenSubSonic` 和部分`Navidrome`风格的音乐API，因此不管是你在使用的是什么播放器
+支持完整的 **OpenSubsonic** 与部分 **Navidrome** 风格 REST API。常见客户端例如：
 
-- [音流](https://music.aqzscn.cn/)，
-- [云净听]()
+- [音流](https://music.aqzscn.cn/)
 - [Supersonic](https://github.com/dweymouth/supersonic)
-- ...
+- Feishin、Symfonium、DSub 等 Subsonic / OpenSubsonic 兼容应用
 
-只要支持OpenSubSonic协议的我们都支持
+接口说明见 [OpenSubsonic API](/opensubsonic-api)、[Navidrome API](/navidrome-api)。
 
 ## 安装
+
+Docker Compose 示例（请按实际环境修改端口与卷路径）：
 
 ```yaml
 services:
@@ -42,8 +53,10 @@ services:
     container_name: music-free
     restart: unless-stopped
     ports:
-      - "14533 :4533"
+      - "4533:4533"
     volumes:
-      - /vol1/docker/muisc-free:/app/data
+      - /vol1/docker/music-free:/app/data
       - /vol1/music:/app/music
 ```
+
+部署后使用 `config.yaml` 中的默认管理员登录，并尽快修改密码（见 [用户模块](/user)）。

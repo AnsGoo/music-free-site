@@ -6,7 +6,7 @@ export default withMermaid(
   defineConfig({
     title: "MusicFree",
     base: "/music-free-site/",
-    description: "MusicFree Site",
+    description: "MusicFree 文档：音乐管理、插件扩展与 OpenSubsonic API",
     vite: {
       resolve: {
         alias: [
@@ -25,10 +25,11 @@ export default withMermaid(
 
       sidebar: [
         {
-          text: "关于MusicFree",
+          text: "关于 MusicFree",
           items: [
+            { text: "功能特性", link: "/feature" },
             {
-              text: "功能特性",
+              text: "功能模块",
               items: [
                 { text: "音乐", link: "/music" },
                 { text: "专辑", link: "/album" },
@@ -40,13 +41,15 @@ export default withMermaid(
             {
               text: "扩展",
               items: [
-                { text: "插件", link: "/plugin" },
+                { text: "插件介绍", link: "/plugin" },
                 { text: "注册表", link: "/plugin-registry" },
                 { text: "插件开发", link: "/plugin-development" },
+                { text: "插件编排", link: "/plugin-orchestration" },
+                { text: "第三方插件合集", link: "/plugin-collection" },
               ],
             },
             {
-              text: "API兼容列表",
+              text: "API 兼容",
               items: [
                 {
                   text: "OpenSubsonic",
@@ -55,7 +58,6 @@ export default withMermaid(
                 { text: "Navidrome", link: "/navidrome-api" },
               ],
             },
-            { text: "插件开发", link: "/plugin-development" },
           ],
         },
       ],

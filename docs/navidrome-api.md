@@ -1,4 +1,12 @@
-# 已实现 Navidrome 风格 Native REST API
+---
+outline: deep
+---
+
+# Navidrome API
+
+MusicFree 已实现的 Navidrome 风格 Native REST API（实验性兼容）。OpenSubsonic 接口见 [OpenSubsonic API](/opensubsonic-api)；认证方式见 [用户模块](/user)。
+
+---
 
 ## 通用约定
 

@@ -1,8 +1,16 @@
-# 用户模块 · 功能介绍
+---
+outline: deep
+---
+
+# 用户
+
+相关文档：[歌单](/playlist) · [OpenSubsonic API](/opensubsonic-api) · [Navidrome API](/navidrome-api)
+
+![](./img/user.png)
 
 ## 1. 模块概述
 
-**用户模块**负责 Music Free 的账号体系：登录 Web 界面、多方式 API 认证、管理员对用户与 API Key 的生命周期管理，以及按用户隔离的私有数据（歌单、收藏、播放记录等）。
+**用户模块**负责 MusicFree 的账号体系：登录 Web 界面、多方式 API 认证、管理员对用户与 API Key 的生命周期管理，以及按用户隔离的私有数据（歌单、收藏、播放记录等）。
 
 功能分布在两个层面：
 
@@ -44,8 +52,6 @@ flowchart TB
   US --> FAV
   US --> HIST
 ```
-
----
 
 ## 2. 访问与角色
 
@@ -90,8 +96,6 @@ flowchart TB
 
 - 用户名、密码来自 `config.yaml` → `auth.default_user` / `auth.default_password`（常见为 `admin` / `admin`）。
 - **首次部署后请尽快修改默认密码**，并在生产环境修改配置中的默认值。
-
----
 
 ## 4. 认证方式（API）
 
@@ -144,8 +148,6 @@ X-API-Key: <生成时复制的密钥>
 Authorization: Bearer <token>
 ```
 
----
-
 ## 5. 用户管理（/admin/users）
 
 仅 **管理员** 可访问。以卡片列表展示全部用户，支持刷新与移动端「更多操作」菜单。
@@ -186,8 +188,6 @@ Authorization: Bearer <token>
 | **设为管理员 / 取消管理员** | 不能取消**自己**的管理员身份 |
 | **启用 / 失效**             | 不能将**自己**设为失效       |
 
----
-
 ## 6. 用户与业务数据隔离
 
 登录成功后，请求上下文携带 `userId`，以下数据按用户区分：
@@ -200,8 +200,6 @@ Authorization: Bearer <token>
 | **管理操作** | 扫描、刮削、插件配置等仅管理员                         |
 
 曲库中的 **歌曲 / 专辑 / 艺术家** 为**全局共享**媒体库；用户差异主要体现在歌单、收藏与播放行为，而非各自独立的文件目录（除非未来扩展 per-user 库）。
-
----
 
 ## 7. OpenSubsonic 用户接口
 
@@ -234,7 +232,7 @@ Authorization: Bearer <token>
 ### 8.3 客户端（Feishin 等）连接
 
 ```text
-服务器地址填 Music Free 的 /rest 根路径
+服务器地址填 MusicFree 的 `/rest` 根路径
     → 用户名 + 密码（OpenSubsonic 方式）
     → 或使用 u/t/s Token 模式（与 Subsonic 一致）
 ```
@@ -246,29 +244,25 @@ Authorization: Bearer <token>
     → 该用户无法登录，API Key 与 Token 均不可用
 ```
 
----
-
 ## 9. 安全建议
 
 - 部署后立即修改 **默认 admin 密码**，并限制管理后台仅内网或 VPN 可达（若可能）。
 - **API Key** 视同密码保管；泄露后应立即 **失效** 并重新生成。
 - 修改用户密码会使旧 API Key 失效，属预期行为。
 
----
-
 ## 10. 常见问题
 
 **Q：忘记密码怎么办？**  
-A: 管理员在 `/admin/users` 使用该用户 **当前密码** 验证后设置新密码。
+A：管理员在 `/admin/users` 使用该用户 **当前密码** 验证后设置新密码。
 
 **Q：普通用户能访问 /admin 吗？**  
-A: 不能。路由与 API 均有管理员校验。
+A：不能。路由与 API 均有管理员校验。
 
 **Q：API Key 和登录密码有什么区别？**  
-A: 登录密码用于 Web 登录与 OpenSubsonic `u/t/s`；API Key 仅用于 `X-API-Key` 头，由管理员单独签发，可设过期与吊销。
+A：登录密码用于 Web 登录与 OpenSubsonic `u/t/s`；API Key 仅用于 `X-API-Key` 头，由管理员单独签发，可设过期与吊销。
 
 **Q：失效用户的数据会删除吗？**  
-A: 不会自动删除歌单、收藏等；仅禁止登录与 API 访问。如需清理需另行处理数据。
+A：不会自动删除歌单、收藏等；仅禁止登录与 API 访问。如需清理需另行处理数据。
 
 **Q：一个服务器可以多用户同时使用吗？**  
-A: 可以。每用户独立歌单与收藏；媒体库共享。公开歌单可被其他用户浏览。
+A：可以。每用户独立歌单与收藏；媒体库共享。公开歌单可被其他用户浏览。
