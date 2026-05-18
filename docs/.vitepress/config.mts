@@ -33,7 +33,7 @@ export default withMermaid(
 
       sidebar: [
         {
-          text: "关于 MusicFree",
+          text: "MusicFree 文档",
           items: [
             { text: "功能特性", link: "/feature" },
             {

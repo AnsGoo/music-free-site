@@ -59,4 +59,4 @@ services:
       - /vol1/music:/app/music
 ```
 
-部署后使用 `config.yaml` 中的默认管理员登录，并尽快修改密码（见 [用户模块](/user)）。
+部署后尽快修改密码（见 [用户模块](/user)）。
