@@ -1,0 +1,72 @@
+name: Bug 报告
+description: 报告 MusicFree 程序异常或错误行为
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先 [搜索已有 Issue](https://github.com/ansgoo/music-free-site/issues)，并阅读 [反馈说明](https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md)。
+
+        文档错误请使用 **文档问题** 模板。
+  - type: checkboxes
+    attributes:
+      label: 是否已有相关 Issue？
+      description: 请先搜索，避免重复提交。
+      options:
+        - label: 我已搜索过现有 Issue
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: MusicFree 版本
+      description: 镜像标签、发布版本或 commit
+      placeholder: "v1.2.3 / latest / commit abc1234"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 实际结果
+      description: 简要描述你遇到的问题或错误信息。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 期望结果
+      description: 你认为正确的行为应该是什么。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 复现步骤
+      description: 从操作到出现问题的完整路径。
+      placeholder: |
+        1. 打开 /admin/music
+        2. 点击开始检测
+        3. 出现报错
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 环境
+      description: |
+        示例：
+        - **部署**：Docker / 裸机
+        - **系统**：Ubuntu 22.04
+        - **插件**：mf-plugin-netease
+      value: |
+        - 部署：
+        - 系统：
+        - 插件：
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 补充信息
+      description: |
+        可附上截图、日志或相关链接。
+
+        提示：可将文件拖拽到评论区。
+    validations:
+      required: false

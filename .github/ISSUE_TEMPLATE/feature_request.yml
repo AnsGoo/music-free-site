@@ -1,0 +1,37 @@
+name: 功能特性
+description: 提出新功能或体验改进建议
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先 [搜索已有 Issue](https://github.com/ansgoo/music-free-site/issues)，并阅读 [反馈说明](https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md)。
+  - type: checkboxes
+    attributes:
+      label: 是否已有相关 Issue？
+      description: 请先搜索，避免重复提交。
+      options:
+        - label: 我已搜索过现有 Issue
+          required: true
+  - type: textarea
+    attributes:
+      label: 使用场景
+      description: 你想解决什么问题？在什么情况下会用到？
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 期望行为
+      description: 希望增加什么功能？它应如何工作？
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 参考信息
+      description: |
+        类似产品、截图或相关链接（可选）。
+
+        提示：可将文件拖拽到评论区。
+    validations:
+      required: false
