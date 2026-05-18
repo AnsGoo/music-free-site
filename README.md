@@ -12,7 +12,7 @@
 
 MusicFree 希望用 **All in One** 的方式，**让听歌这件事变得简单一点**。
 
-![](./docs/img//music.png)
+![](./docs/public/img/music.png)
 
 ## 扩展性
 

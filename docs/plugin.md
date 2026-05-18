@@ -20,7 +20,7 @@ outline: deep
 
 后期与第三方平台的交互也将主要通过插件扩展。
 
-![](./img/remote-seach.png)
+![](/img/remote-seach.png)
 
 ## 插件商店
 
@@ -29,7 +29,7 @@ outline: deep
 - **订阅注册表**：在商店设置中添加一个或多个 `registry.json` URL，详见 [插件注册表](/plugin-registry)。
 - **常用注册表与插件说明**：见 [第三方插件合集](/plugin-collection)。
 
-![](./img/plugin-store.png)
+![](/img/plugin-store.png)
 
 ---
 
@@ -40,7 +40,7 @@ outline: deep
 - 远程搜索 / 下载、歌单导入**不走**五维编排，见各功能页说明。
 - 详细规则、配置 JSON 与排错：见 [插件编排](/plugin-orchestration)。
 
-![](./img/plugin-orin.png)
+![](/img/plugin-orin.png)
 
 ---
 

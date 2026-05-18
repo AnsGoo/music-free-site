@@ -6,7 +6,7 @@ outline: deep
 
 相关文档：[音乐管理](/music) · [艺术家](/artist) · [插件编排](/plugin-orchestration) · [OpenSubsonic API](/opensubsonic-api)
 
-![](./img/album.png)
+![](/img/album.png)
 
 ## 1. 模块概述
 

@@ -190,7 +190,7 @@ flowchart TB
 
 ### 6.1 界面入口
 
-![](./img/plugin-orin.png)
+![](/img/plugin-orin.png)
 
 - **插件管理** → `/admin/plugin` → 页内 **编排** 区域
 - 五个字段卡片：调整顺序（上移/下移）、添加/移除插件、**保存编排**
