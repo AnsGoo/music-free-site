@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as e,a4 as l}from"./chunks/framework.CoAJCMjA.js";const c=JSON.parse('{"title":"MusicFree","description":"","frontmatter":{},"headers":[],"relativePath":"feature.md","filePath":"feature.md"}'),n={name:"feature.md"};function t(r,s,h,p,o,k){return a(),e("div",null,[...s[0]||(s[0]=[l("",15)])])}const E=i(n,[["render",t]]);export{c as __pageData,E as default};
