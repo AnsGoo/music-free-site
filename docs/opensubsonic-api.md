@@ -4,7 +4,7 @@ outline: deep
 
 # OpenSubsonic API
 
-MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明。认证细节见 [用户模块](/user)；Navidrome 风格 REST 见 [Navidrome API](/navidrome-api)。
+MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接口和官方不兼容或者缺失，请反馈。认证细节见 [用户模块](/user)；Navidrome 风格 REST 见 [Navidrome API](/navidrome-api)。
 
 ---
 
