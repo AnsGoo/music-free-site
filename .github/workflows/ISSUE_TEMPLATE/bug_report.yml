@@ -1,0 +1,25 @@
+name: Bug 报告
+description: 报告错误或异常行为
+title: "Bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    value: |
+      请尽量提供可复现的步骤与环境信息，便于我们定位问题。
+
+  - type: input
+    id: version
+    attributes:
+      label: MusicFree 版本
+      placeholder: "例如 v1.2.3 或 commit abc1234"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      placeholder: 请描述问题现象、复现步骤，以及实际结果与期望结果的差异。
+    validations:
+      required: true
