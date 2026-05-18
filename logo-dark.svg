@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 32" role="img" aria-label="MusicFree">
+  <rect width="32" height="32" rx="8" fill="#3d3530"/>
+  <ellipse cx="12" cy="22.5" rx="6" ry="5" fill="#e07a4f"/>
+  <rect x="16.5" y="8" width="3.5" height="15" rx="0.75" fill="#e07a4f"/>
+  <text
+    x="40"
+    y="22"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="18"
+    font-weight="600"
+    fill="#f2e4d9"
+  >MusicFree</text>
+</svg>
