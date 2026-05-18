@@ -37,37 +37,37 @@ mfShowcase:
   title: 功能掠影
   lead: 从曲库管理到插件扩展，一览 MusicFree 的核心界面与典型使用场景。
   items:
-    - img: /img/music.png
+    - img: /img/music.webp
       alt: 音乐库与播放界面
       title: 曲库与播放
       details: 统一浏览与播放，配合媒体源与入库流程，维护个人曲库。
       link: /music
       linkText: 音乐模块
-    - img: /img/sources.png
+    - img: /img/sources.webp
       alt: 媒体源配置
       title: 多源接入
       details: 本地目录、WebDAV 等来源集中管理，为扫描与播放提供统一入口。
       link: /music
       linkText: 媒体源说明
-    - img: /img/remote-seach.png
+    - img: /img/remote-seach.webp
       alt: 远程搜索
       title: 远程搜索
       details: 按插件能力检索曲目，可衔接下载与入库，扩展获取音乐的途径。
       link: /plugin
       linkText: 插件介绍
-    - img: /img/plugin-store.png
+    - img: /img/plugin-store.webp
       alt: 插件商店
       title: 插件商店
       details: 浏览与安装插件，订阅注册表后一站式扩展搜索、刮削与歌单能力。
       link: /plugin-registry
       linkText: 注册表文档
-    - img: /img/scraper-song.png
+    - img: /img/scraper-song.webp
       alt: 单曲刮削
       title: 单曲刮削
       details: 补全封面、标签与歌词等信息，多插件协作完成单曲级元数据。
       link: /music
       linkText: 刮削与去重
-    - img: /img/playlist.png
+    - img: /img/playlist.webp
       alt: 歌单管理
       title: 歌单管理
       details: 导入与同步各平台歌单，统一在本地库中浏览与播放。

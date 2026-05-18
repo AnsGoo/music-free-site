@@ -6,7 +6,7 @@ outline: deep
 
 相关文档：[插件](/plugin) · [插件合集](/plugin-collection) · [专辑](/album) · [歌单](/playlist) · [用户](/user)
 
-![](/img/music.png)
+![](/img/music.webp)
 
 ## 1. 模块概述
 
@@ -62,7 +62,7 @@ flowchart LR
 
 ## 3. 音乐搜索（远程搜索与下载）
 
-![](/img/remote-seach.png)
+![](/img/remote-seach.webp)
 
 ### 3.1 能做什么
 
@@ -108,7 +108,7 @@ flowchart LR
 
 ## 4. 音乐去重（重复检测）
 
-![](/img/remove-repeat.png)
+![](/img/remove-repeat.webp)
 
 ### 4.1 能做什么
 
@@ -128,7 +128,7 @@ flowchart LR
 
 ## 5. 音乐刮削（元数据补全）
 
-![](/img/scraper-song.png)
+![](/img/scraper-song.webp)
 
 ### 5.1 能做什么
 
@@ -152,7 +152,7 @@ flowchart LR
 
 ## 6. 媒体源添加与管理
 
-![](/img/sources.png)
+![](/img/sources.webp)
 音乐管理中的搜索、下载、去重、刮削都作用于**已入库**的曲目；曲目必须先通过 **媒体源扫描** 进入数据库。媒体源在管理后台单独页面维护：**`/admin/sources`**（侧栏「媒体源管理」），与 `/admin/music` 配合使用。
 
 ### 6.1 媒体源类型

@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" role="img" aria-label="Music Free">
-  <rect width="40" height="40" rx="10" fill="#f2e4d9"/>
-  <ellipse cx="15" cy="28" rx="7" ry="6" fill="#c35f33"/>
-  <rect x="20.5" y="10" width="4" height="18" rx="0.85" fill="#c35f33"/>
-  <text
-    x="52"
-    y="27"
-    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="22"
-    font-weight="600"
-    letter-spacing="-0.02em"
-    fill="#2c2419"
-  >Music Free</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" aria-label="Music Free" viewBox="0 0 220 40"><rect width="40" height="40" fill="#f2e4d9" rx="10"/><ellipse cx="15" cy="28" fill="#c35f33" rx="7" ry="6"/><rect width="4" height="18" x="20.5" y="10" fill="#c35f33" rx=".85"/><text x="52" y="27" fill="#2c2419" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600" letter-spacing="-.02em">Music Free</text></svg>

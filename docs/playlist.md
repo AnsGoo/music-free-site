@@ -6,7 +6,7 @@ outline: deep
 
 相关文档：[音乐管理](/music) · [插件合集](/plugin-collection) · [用户](/user) · [OpenSubsonic API](/opensubsonic-api)
 
-![](/img/playlist.png)
+![](/img/playlist.webp)
 
 ## 1. 模块概述
 
@@ -85,7 +85,7 @@ flowchart TB
 
 ## 5. 歌单详情（/playlists/:id）
 
-![](/img/playlist-detail.png)
+![](/img/playlist-detail.webp)
 
 ### 5.1 头部信息
 

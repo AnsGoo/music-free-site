@@ -27,5 +27,8 @@ yarn-error.log*
 # VitePress
 docs/.vitepress/cache/
 
+# 图片压缩工具（本地脚本自动下载）
+.tools/
+
 dist
 

@@ -6,7 +6,7 @@ outline: deep
 
 相关文档：[歌单](/playlist) · [OpenSubsonic API](/opensubsonic-api) · [Navidrome API](/navidrome-api)
 
-![](/img/user.png)
+![](/img/user.webp)
 
 ## 1. 模块概述
 

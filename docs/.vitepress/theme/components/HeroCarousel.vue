@@ -3,12 +3,12 @@ import { computed, onMounted, onUnmounted, ref } from "vue";
 import { withBase } from "vitepress";
 
 const slides = [
-  { src: "/img/music.png", alt: "音乐库与播放" },
-  { src: "/img/sources.png", alt: "媒体源" },
-  { src: "/img/remote-seach.png", alt: "远程搜索" },
-  { src: "/img/plugin-store.png", alt: "插件商店" },
-  { src: "/img/scraper-song.png", alt: "单曲刮削" },
-  { src: "/img/playlist.png", alt: "歌单管理" },
+  { src: "/img/music.webp", alt: "音乐库与播放" },
+  { src: "/img/sources.webp", alt: "媒体源" },
+  { src: "/img/remote-seach.webp", alt: "远程搜索" },
+  { src: "/img/plugin-store.webp", alt: "插件商店" },
+  { src: "/img/scraper-song.webp", alt: "单曲刮削" },
+  { src: "/img/playlist.webp", alt: "歌单管理" },
 ];
 
 const INTERVAL = 5000;
