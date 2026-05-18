@@ -1,8 +1,8 @@
----
-outline: deep
----
+<p align="center">
+  <img src="docs/public/logo.svg" alt="MusicFree" width="220" />
+</p>
 
-# MusicFree 功能特性
+# MusicFree
 
 曾几何时，想听无损音乐往往要分别搭建多套服务：
 

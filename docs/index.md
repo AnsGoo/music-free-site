@@ -4,6 +4,9 @@ layout: home
 hero:
   name: "MusicFree"
   text: "让听歌这件事变得简单一点"
+  image:
+    src: /logo.svg
+    alt: MusicFree
   tagline: 音乐管理、元数据刮削与插件扩展，All in One
   actions:
     - theme: brand

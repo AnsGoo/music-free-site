@@ -7,6 +7,7 @@ export default withMermaid(
     title: "MusicFree",
     base: "/music-free-site/",
     description: "MusicFree 文档：音乐管理、插件扩展与 OpenSubsonic API",
+    head: [["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }]],
     vite: {
       resolve: {
         alias: [
@@ -18,6 +19,11 @@ export default withMermaid(
     },
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
+      logo: {
+        light: "/logo.svg",
+        dark: "/logo-dark.svg",
+      },
+      siteTitle: false,
       nav: [
         { text: "特性", link: "/feature" },
         { text: "扩展", link: "/plugin" },
