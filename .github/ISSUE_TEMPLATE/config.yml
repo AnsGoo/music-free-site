@@ -2,10 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: 反馈说明
     url: https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md
-    about: 提交前请先阅读反馈指引（类型区分、填写要点）
+    about: 提交前请先阅读反馈指引
   - name: 浏览已有 Issue
     url: https://github.com/ansgoo/music-free-site/issues
-    about: 搜索是否已有相同问题或建议，避免重复提交
+    about: 搜索是否已有相同问题，避免重复提交
   - name: 插件问题
     url: https://github.com/ansgoo/music-free-plugin/issues
     about: 插件 Bug 或功能请在对应插件仓库反馈
