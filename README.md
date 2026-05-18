@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/public/logo.svg" alt="MusicFree" width="220" />
+  <img src="docs/public/logo.svg" alt="MusicFree" width="400" />
 </p>
 
 # MusicFree
@@ -62,3 +62,9 @@ services:
 ```
 
 部署后尽快修改密码（见 [用户模块](/user)）。
+
+## 赞赏
+
+<p align="center">
+  <img src="docs/public/img/reward-code.png" alt="MusicFree" width="200" />
+</p>
