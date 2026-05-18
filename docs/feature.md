@@ -6,7 +6,7 @@
 - 「音乐标刮削」用[MusicTagWeb](https://xiers-organization.gitbook.io/music-tag-web-v2),
 - 「音乐搜索和下载」用[MusicDL](https://musicdl.readthedocs.io/en/latest/),
 
-有没有更好的,有没有一个All in all的方式，让听歌这件事变得简单一点。
+有没有更好的,有没有一个All in all的方式，**让听歌这件事变得简单一点**。
 
 ## 扩展性
 
@@ -32,3 +32,18 @@
 - ...
 
 只要支持OpenSubSonic协议的我们都支持
+
+## 安装
+
+```yaml
+services:
+  music-free:
+    image: ansgoo/music-free:latest
+    container_name: music-free
+    restart: unless-stopped
+    ports:
+      - "14533 :4533"
+    volumes:
+      - /vol1/docker/muisc-free:/app/data
+      - /vol1/music:/app/music
+```

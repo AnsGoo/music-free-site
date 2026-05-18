@@ -27,7 +27,16 @@ export default withMermaid(
         {
           text: "关于MusicFree",
           items: [
-            { text: "特性", link: "/feature" },
+            {
+              text: "功能特性",
+              items: [
+                { text: "音乐", link: "/music" },
+                { text: "专辑", link: "/album" },
+                { text: "艺术家", link: "/artist" },
+                { text: "歌单", link: "/playlist" },
+                { text: "用户", link: "/user" },
+              ],
+            },
             {
               text: "扩展",
               items: [

@@ -291,6 +291,8 @@ sequenceDiagram
 
 `albumCover` 非空时须为 [§3.4](#local-cover) 规定的本地文件名。
 
+**插件要求**：manifest 声明 `getAlbumInfo`；封面须写入 `/coverArt` 并返回本地 `sha256-*.ext` 文件名（与曲目封面规则相同）。
+
 ### 5.5 `GetArtistInfo`
 
 **入参**
@@ -310,6 +312,8 @@ sequenceDiagram
 - 或多候选：`{ "candidates": [ { ... }, ... ] }`
 
 `artistAvatar` 非空时遵循 [§3.4](#local-cover)。
+
+**插件要求**： 插件须在 manifest 中声明 getArtistInfo，并将头像写入宿主映射目录 /coverArt，返回符合规则的本地文件名（sha256-<64位hex>.jpg|jpeg|png|webp），不得直接返回 http(s) 图片 URL
 
 ### 5.6 `FetchPlaylist`
 
