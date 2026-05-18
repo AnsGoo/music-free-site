@@ -66,5 +66,5 @@ services:
 ## 赞赏
 
 <p align="center">
-  <img src="docs/public/img/reward-code.png" alt="MusicFree" width="200" />
+  <img src="docs/public/img/reward-code.png" alt="MusicFree" width="400" />
 </p>

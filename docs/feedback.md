@@ -33,3 +33,9 @@ outline: deep
 - **浏览全部 Issue**：[github.com/ansgoo/music-free-site/issues](https://github.com/ansgoo/music-free-site/issues)
 - **文档改进**：欢迎提交 Pull Request
 - **插件相关**：[music-free-plugin Issues](https://github.com/ansgoo/music-free-plugin/issues)
+
+## 赞赏
+
+<p align="center">
+  <img src="/img/reward-code.png" alt="MusicFree" width="400" />
+</p>
