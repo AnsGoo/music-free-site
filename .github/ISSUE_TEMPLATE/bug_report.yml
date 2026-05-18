@@ -1,5 +1,5 @@
 name: Bug 报告
-description: 报告程序异常或文档错误
+description: 报告 MusicFree 程序异常或错误行为
 title: "Bug: "
 labels:
   - bug
@@ -8,24 +8,21 @@ body:
     value: |
       提交前请先 [搜索已有 Issue](https://github.com/ansgoo/music-free-site/issues)，并阅读 [反馈说明](https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md)。
 
-      请尽量提供可复现步骤与环境信息，便于定位问题。
+      文档错误请使用 **文档问题** 模板，不要选本模板。
 
-  - type: dropdown
-    id: feedback_type
+  - type: checkboxes
+    id: searched
     attributes:
-      label: 反馈类型
-      description: 程序 Bug 指服务端、管理后台、插件宿主等；文档问题指本站说明错误、链接失效、示例过时等。
+      label: 提交前确认
       options:
-        - 程序 Bug
-        - 文档问题
-    validations:
-      required: true
+        - label: 我已搜索过现有 Issue，确认没有重复
+          required: true
 
   - type: input
     id: version
     attributes:
       label: MusicFree 版本
-      description: 镜像标签、发布版本或 commit；文档问题可填「不适用」。
+      description: 镜像标签、发布版本或 commit。
       placeholder: "例如 v1.2.3、latest 或 commit abc1234"
     validations:
       required: true
@@ -42,21 +39,6 @@ body:
         - 插件：mf-plugin-netease（已启用）
     validations:
       required: true
-    if:
-      - id: feedback_type
-        value: 程序 Bug
-
-  - type: input
-    id: doc_page
-    attributes:
-      label: 相关文档页面
-      description: 文档路径或完整 URL。
-      placeholder: "例如 docs/music.md 或 https://ansgoo.github.io/music-free-site/music"
-    validations:
-      required: true
-    if:
-      - id: feedback_type
-        value: 文档问题
 
   - type: textarea
     id: steps
@@ -75,7 +57,6 @@ body:
     attributes:
       label: 实际结果
       description: 当前观察到的现象或错误信息。
-      placeholder: 请描述实际发生了什么，可粘贴日志或报错摘要。
     validations:
       required: true
 
@@ -91,5 +72,4 @@ body:
     id: extra
     attributes:
       label: 补充信息（可选）
-      description: 截图、日志片段、相关 Issue 链接等。
-      placeholder: 可拖拽上传截图到评论框，或在此粘贴链接。
+      description: 截图、日志片段、相关链接等。

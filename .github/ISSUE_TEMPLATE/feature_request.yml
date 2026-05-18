@@ -8,7 +8,13 @@ body:
     value: |
       提交前请先 [搜索已有 Issue](https://github.com/ansgoo/music-free-site/issues)，并阅读 [反馈说明](https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md)。
 
-      感谢你愿意为 MusicFree 贡献想法。
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 Issue，确认没有重复
+          required: true
 
   - type: textarea
     id: scenario
@@ -39,6 +45,3 @@ body:
     attributes:
       label: 参考信息（可选）
       description: 类似产品、截图、相关链接或补充说明。
-      placeholder: |
-        - 参考产品：……
-        - 截图 / 链接：……
