@@ -7,7 +7,9 @@ export default withMermaid(
     title: "MusicFree",
     base: "/music-free-site/",
     description: "MusicFree 文档：音乐管理、插件扩展与 OpenSubsonic API",
-    head: [["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }]],
+    head: [
+      ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+    ],
     vite: {
       resolve: {
         alias: [
@@ -63,6 +65,10 @@ export default withMermaid(
                 },
                 { text: "Navidrome", link: "/navidrome-api" },
               ],
+            },
+            {
+              text: "反馈",
+              link: "/feedback",
             },
           ],
         },
