@@ -1,25 +1,95 @@
 name: Bug 报告
-description: 报告错误或异常行为
+description: 报告程序异常或文档错误
 title: "Bug: "
 labels:
   - bug
 body:
   - type: markdown
     value: |
-      请尽量提供可复现的步骤与环境信息，便于我们定位问题。
+      提交前请先 [搜索已有 Issue](https://github.com/ansgoo/music-free-site/issues)，并阅读 [反馈说明](https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md)。
+
+      请尽量提供可复现步骤与环境信息，便于定位问题。
+
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: 反馈类型
+      description: 程序 Bug 指服务端、管理后台、插件宿主等；文档问题指本站说明错误、链接失效、示例过时等。
+      options:
+        - 程序 Bug
+        - 文档问题
+    validations:
+      required: true
 
   - type: input
     id: version
     attributes:
       label: MusicFree 版本
-      placeholder: "例如 v1.2.3 或 commit abc1234"
+      description: 镜像标签、发布版本或 commit；文档问题可填「不适用」。
+      placeholder: "例如 v1.2.3、latest 或 commit abc1234"
     validations:
       required: true
 
   - type: textarea
-    id: description
+    id: environment
     attributes:
-      label: 问题描述
-      placeholder: 请描述问题现象、复现步骤，以及实际结果与期望结果的差异。
+      label: 环境
+      description: 部署方式、操作系统、相关插件等。
+      placeholder: |
+        例如：
+        - 部署：Docker / 裸机
+        - 系统：Ubuntu 22.04
+        - 插件：mf-plugin-netease（已启用）
     validations:
       required: true
+    if:
+      - id: feedback_type
+        value: 程序 Bug
+
+  - type: input
+    id: doc_page
+    attributes:
+      label: 相关文档页面
+      description: 文档路径或完整 URL。
+      placeholder: "例如 docs/music.md 或 https://ansgoo.github.io/music-free-site/music"
+    validations:
+      required: true
+    if:
+      - id: feedback_type
+        value: 文档问题
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从操作到出现问题的完整路径。
+      placeholder: |
+        1. 打开 /admin/music
+        2. 点击「开始检测」
+        3. 出现报错……
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 当前观察到的现象或错误信息。
+      placeholder: 请描述实际发生了什么，可粘贴日志或报错摘要。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      description: 你认为正确的行为应该是什么。
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（可选）
+      description: 截图、日志片段、相关 Issue 链接等。
+      placeholder: 可拖拽上传截图到评论框，或在此粘贴链接。

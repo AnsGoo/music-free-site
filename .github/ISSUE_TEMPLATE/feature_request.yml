@@ -1,24 +1,44 @@
 name: 功能特性
-description: 提出新功能或改进建议
+description: 提出新功能或体验改进建议
 title: "愿望："
 labels:
   - enhancement
 body:
   - type: markdown
     value: |
-      感谢你愿意为 MusicFree 贡献想法。请尽量说明你想解决的问题，以及期望的功能行为。
+      提交前请先 [搜索已有 Issue](https://github.com/ansgoo/music-free-site/issues)，并阅读 [反馈说明](https://github.com/ansgoo/music-free-site/blob/main/docs/feedback.md)。
+
+      感谢你愿意为 MusicFree 贡献想法。
 
   - type: textarea
-    id: description
+    id: scenario
     attributes:
-      label: 功能描述
-      description: 希望增加什么功能？它应如何工作？
+      label: 使用场景
+      description: 你想解决什么问题？在什么情况下会用到？
       placeholder: |
-        希望增加 XXX 功能。
-
         例如：
-        - 使用场景：……
-        - 期望行为：……
-        - 可选：参考截图、链接或类似产品
+        - 当前在批量刮削时无法……
+        - 希望减少手动操作步骤……
     validations:
       required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+      description: 希望增加什么功能？它应如何工作？
+      placeholder: |
+        例如：
+        - 在插件编排页支持一键恢复默认链
+        - 导出刮削任务结果为 CSV
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考信息（可选）
+      description: 类似产品、截图、相关链接或补充说明。
+      placeholder: |
+        - 参考产品：……
+        - 截图 / 链接：……
