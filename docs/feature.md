@@ -59,4 +59,5 @@ services:
       - /vol1/music:/app/music
 ```
 
+默认账号/密码：admin / admin
 部署后尽快修改密码（见 [用户模块](/user)）。
