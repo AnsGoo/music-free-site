@@ -44,6 +44,7 @@ export default withMermaid(
                 { text: "艺术家", link: "/artist" },
                 { text: "歌单", link: "/playlist" },
                 { text: "用户", link: "/user" },
+                { text: "许愿", link: "/wish" },
               ],
             },
             {
