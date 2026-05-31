@@ -29,6 +29,7 @@ export default withMermaid(
       nav: [
         { text: "特性", link: "/feature" },
         { text: "扩展", link: "/plugin" },
+        { text: "发布日志", link: "/changelog" },
       ],
 
       sidebar: [
@@ -66,6 +67,10 @@ export default withMermaid(
                 },
                 { text: "Navidrome", link: "/navidrome-api" },
               ],
+            },
+            {
+              text: "发布日志",
+              link: "/changelog",
             },
             {
               text: "反馈",
