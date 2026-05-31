@@ -124,6 +124,29 @@ flowchart LR
 - 提供 **批量清理重复歌曲**（自动保留一组内的一条）。
 - 删除默认是软删除，即标记对应的音乐文件为已删除，不会删除音乐源文件中的音乐作品，可在系统配置里面更改为硬删除
 
+```mermaid
+flowchart TB
+  subgraph step1 [步骤 1 生成指纹]
+    Scan[媒体源扫描 / 指纹回填]
+    FP[(songs.fingerprint)]
+    Scan --> FP
+  end
+  subgraph step2 [步骤 2 重复检测]
+    Pair[全库指纹两两比对]
+    Group[连通分量聚类为重复组]
+    Pair --> Group
+  end
+  subgraph step3 [步骤 3 去重]
+    Manual[手动勾选假删除]
+    Auto[按规则批量假删除]
+    Manual --> Soft[(is_delete = Y)]
+    Auto --> Soft
+  end
+  FP --> Pair
+  Group --> Manual
+  Group --> Auto
+```
+
 ### 4.2 使用流程
 
 1. 点击 **开始检测**，创建异步任务并显示进度（可比对歌曲数、已处理配对、重复组数量等）。
