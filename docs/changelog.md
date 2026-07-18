@@ -44,6 +44,8 @@ docker compose up -d
 
 ![播放详情页](https://cdn.jsdelivr.net/gh/ansgoo/music-free-site@main/docs/public/img/player-detail.webp)
 
+![播放详情页](https://cdn.jsdelivr.net/gh/ansgoo/music-free-site@main/docs/public/img/player-detail-mobile.webp)
+
 #### 远程搜索支持乐库音乐
 
 远程搜索插件结果页现已支持同时检索本地乐库，根据检索结果帮助用户决策是否下载。

@@ -42,6 +42,15 @@ for f in "$IMG"/*.png; do
   echo "  $base.webp"
 done
 
+echo "→ JPG → WebP (quality $QUALITY)"
+shopt -s nullglob
+for f in "$IMG"/*.jpg; do
+  base=$(basename "$f" .jpg)
+  "$CWEBP" -q "$QUALITY" -m 6 -mt "$f" -o "$IMG/${base}.webp"
+  rm "$f"
+  echo "  $base.webp"
+done
+
 echo "→ SVG (svgo)"
 npx --yes svgo@3.3.2 -f "$PUBLIC" -r --multipass
 
