@@ -30,6 +30,67 @@ docker compose up -d
 ```
 
 ---
+
+## V1.2.3
+
+> 发布日期：2026年8月17日
+
+### 更新特性
+
+#### 对Music Assistant 进行了支持
+
+#### 什么是Music Assistant
+
+> Music Assistant 的核心优势在于打破了音乐生态的壁垒，赋予你对自己音乐库和播放设备的完全控制权。它像一个音乐界的“万能遥控器”或“音乐库管家”，让你能自由地将各种音乐源与各种播放设备组合起来
+> 支持广泛协议：支持 AirPlay、Chromecast、DLNA、Snapcast、MQTT 等多种协议;兼容新老设备：无论是崭新的智能音箱，还是20年前的老式功放，甚至是 DIY 的树莓派播放器，都能成为 Music Assistant 的播放终端
+
+![device.webp](https://ansgoo.github.io/music-free-site/img/music-assistant.webp)
+
+#### 为什么选择Music Assistant
+
+DLNA 是本项目原生支持的硬件设备，Airplay、Chromecast 等其他设备因为社区对其第三方库的实现有差别，导致本项目无法直接集成，但是通过Music Assistant可以集成任意硬件设备，可通过Music Free直接将单曲、专辑、歌单播放到Music Assistant 的Player。
+
+在设备管理页面可以添加Music Assistant 的Player，并支持将其添加到设备列表中来，设备列表中的设备只有管理添加之后，并授权给某个普通用户，则普通用户可以正常使用该设备进行音乐播放
+
+![device.webp](https://ansgoo.github.io/music-free-site/img/music-assistant-device.webp)
+
+#### 如何使用
+
+1. 部署`Music Assistant`,并获取`Music Assistant` 的访问授权`token`（一般Music Assistant 是docker Host 网络模式部署，web访问端口为8095）
+2. 打开`Music Assistant` 设置，添加音乐源，选择  `OpenSubsonic Media Server Library`插件,并配置`Music Free` 的地址、用户名、密码(`MusicFree` 支持所有的Opensubsnoic协议，`Music Assistant`默认用自己音乐库进行播放，因此你播放到Music Assistant的音乐必须在他的库里有)，等待同步完即可
+3. 打开`Music Free` 进入「系统配置」页面 配置`Music Assistant`的访问地址、账号、token，并选择启用`Music Assistant`
+4. 在设备发现页即可看到`Music Assistant` 发现的局域网设备
+
+
+![device.webp](https://ansgoo.github.io/music-free-site/img/music-assistant-option.webp)
+
+---
+
+#### DLNA 局域网设备连接异常
+
+如果是Docker 部署的需要将网络模式改为host 才能发现局域网设备，否则无法发现局域网设备，飞牛原生应用不存在这个问题，同时需要在配置项中配置部署的地址，否则发现设备之后，播放音乐会拉不到音乐流
+
+```yaml
+services:
+  music-free:
+    image: ansgoo/music-free:V1.2.3
+    container_name: music-free
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /vol1/docker/music-free:/app/data
+      - /vol1/music:/app/music
+```
+
+
+### 修复
+
+- 修复了 Docker 挂载只读音乐库文件夹是服务无限重启的异常
+- 修复了 插件配置项保存的异常
+- 修复了 配置项未更新导致DLNA无法启用的异常
+
+---
+
 ## V1.2.2
 
 > 发布日期：2026年7月26日
