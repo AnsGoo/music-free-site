@@ -1,17 +1,30 @@
 /* Hero：品牌字标 */
 .mf-hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   margin-bottom: 0.5rem;
 }
 
-.mf-hero-brand img {
+.mf-hero-brand__mark {
   display: block;
-  width: min(100%, 280px);
-  height: auto;
+  width: 56px;
+  height: 56px;
+  flex: none;
+}
+
+.mf-hero-brand__text {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1;
+  color: var(--vp-c-text-1);
 }
 
 @media (min-width: 640px) {
-  .mf-hero-brand img {
-    width: min(100%, 500px);
+  .mf-hero-brand__mark {
+    width: 64px;
+    height: 64px;
   }
 }
 

@@ -67,6 +67,8 @@ flowchart LR
 
 ## 3. Music Assistant 接入（管理员）
 
+> 完整的接入与配置说明见 [Music Assistant 集成](/music-assistant)。
+
 **Music Assistant** 是一个开源的本地音乐媒体管理器，打破了音乐生态的壁垒，赋予你对自己音乐库和播放设备的完全控制权。它像一个音乐界的“万能遥控器”或“音乐库管家”，支持 AirPlay、Chromecast、DLNA、Snapcast、MQTT 等多种协议，兼容新老设备——无论是崭新的智能音箱，还是多年前的老式功放，甚至是 DIY 的树莓派播放器，都能成为它的播放终端。
 
 ![](/img/music-assistant.webp)

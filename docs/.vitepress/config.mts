@@ -25,10 +25,11 @@ export default withMermaid(
         light: "/logo.svg",
         dark: "/logo-dark.svg",
       },
-      siteTitle: false,
+      siteTitle: "Music Free",
       nav: [
         { text: "特性", link: "/feature" },
         { text: "扩展", link: "/plugin" },
+        { text: "集成", link: "/serve" },
         { text: "发布日志", link: "/changelog" },
       ],
 
@@ -47,6 +48,14 @@ export default withMermaid(
                 { text: "用户", link: "/user" },
                 { text: "许愿", link: "/wish" },
                 { text: "设备", link: "/device" },
+              ],
+            },
+            {
+              text: "生态集成",
+              items: [
+                { text: "MusicFreeServe 集成", link: "/serve" },
+                { text: "Music Assistant 集成", link: "/music-assistant" },
+                { text: "音乐分享", link: "/share" },
               ],
             },
             {

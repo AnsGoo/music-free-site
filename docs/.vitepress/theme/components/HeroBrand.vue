@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { useData, withBase } from "vitepress";
-
-const { isDark } = useData();
-
-const src = computed(() =>
-  withBase(isDark.value ? "/brand-wordmark-dark.svg" : "/brand-wordmark.svg"),
-);
+import { withBase } from "vitepress";
 </script>
 
 <template>
   <div class="mf-hero-brand">
-    <img :src="src" alt="Music Free" width="320" height="58" />
+    <img
+      class="mf-hero-brand__mark"
+      :src="withBase('/logo.svg')"
+      alt=""
+      width="56"
+      height="56"
+      decoding="async"
+    />
+    <span class="mf-hero-brand__text">Music Free</span>
   </div>
 </template>

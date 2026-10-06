@@ -42,6 +42,36 @@ Navidrome Web UI 常用轮询保活；**无需认证**，固定返回空对象�
 
 ---
 
+## GET /library
+
+分页返回**已启用的音乐文件夹**（Navidrome `library` 对象数组）；若配置了默认库且不存在已启用的本地源，会附加虚拟条目 `default-library`。
+
+- HTTP方法：`GET`
+
+- 请求url：`http://example.com/api/library`
+
+- 入参
+
+| 名称              | 描述                              | 默认值            |
+| ----------------- | --------------------------------- | ----------------- |
+| （认证）          | 见上文「通用约定」                |                   |
+| `_start` / `_end` | 分页                              |                   |
+| `_sort`           | `name`（其它值按 name 排序）      | 空则按 name ASC   |
+| `_order`          | `ASC` / `DESC`                    | `ASC`             |
+
+- 响应示例
+
+```json
+[
+  { "id": "src-uuid-1", "name": "本地库" },
+  { "id": "default-library", "name": "Default Library" }
+]
+```
+
+响应头：`X-Total-Count: <总数>`。
+
+---
+
 ## GET /album
 
 分页返回专辑列表（Navidrome `album` 对象数组）。
@@ -438,6 +468,41 @@ Navidrome Web UI 常用轮询保活；**无需认证**，固定返回空对象�
 ```
 
 无权或不存在：**HTTP 404**，`{}`。服务端异常：**HTTP 500**，`{"error":"failed to delete playlist"}`。
+
+---
+
+## GET /user/:id
+
+按 ID 返回 Navidrome `user` 形状的用户信息（失效用户表现为不存在）。
+
+- HTTP方法：`GET`
+
+- 请求url：`http://example.com/api/user/{id}`
+
+- 入参
+
+| 名称     | 描述              | 默认值   |
+| -------- | ----------------- | -------- |
+| （认证） | 见上文            |          |
+| `id`     | 路径参数，用户 ID | **必填** |
+
+- 响应示例
+
+```json
+{
+  "id": "user-uuid",
+  "userName": "admin",
+  "name": "",
+  "email": "",
+  "isAdmin": true,
+  "lastLoginAt": null,
+  "lastAccessAt": null,
+  "createdAt": "2026-01-01T00:00:00Z",
+  "updatedAt": "2026-01-01T00:00:00Z"
+}
+```
+
+不存在或已失效：**HTTP 404**，`{"error":"not found"}`。
 
 ---
 

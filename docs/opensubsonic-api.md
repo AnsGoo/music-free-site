@@ -23,7 +23,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
 
 **路径约定**：每条接口另有同名路径后缀 `.view`（如 `/rest/ping.view`），行为与无前缀路径一致。
 
-**响应格式**：未带 `f=json` 时默认 **XML**；带 `f=json` 时为 **JSON**。成功请求含 `status`、`version`（示例 `1.16.1`）、`serverVersion`（示例 `0.1.1`）、`openSubsonic: true`、`type: MusicFree`。
+**响应格式**：未带 `f=json` 时默认 **XML**；带 `f=json` 时为 **JSON**。成功请求含 `status`、`version`（示例 `1.16.1`）、`serverVersion`（示例 `1.2.5`）、`openSubsonic: true`、`type: MusicFree`。
 
 ## 通用入参（除「ping」外均需认证）
 
@@ -67,7 +67,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
   "subsonic-response": {
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -99,7 +99,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     "license": { "valid": true },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -131,7 +131,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     "openSubsonicExtensions": [{ "name": "transcodeOffset", "versions": [1] }],
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -180,7 +180,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -217,7 +217,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -263,7 +263,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -313,7 +313,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -361,7 +361,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -411,7 +411,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -463,7 +463,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -514,7 +514,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -570,7 +570,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -622,7 +622,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -662,12 +662,64 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
 }
 ```
+
+---
+
+## getAlbumInfo
+
+返回专辑的说明文本（`notes`）与多尺寸封面 URL。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/getAlbumInfo`
+
+- 入参
+
+| 名称     | 描述           | 默认值   |
+| -------- | -------------- | -------- |
+| （认证） | 见「通用入参」 |          |
+| `id`     | 专辑 ID        | **必填** |
+| `f`      |                |          |
+
+- 响应示例
+
+```json
+{
+  "subsonic-response": {
+    "albumInfo": {
+      "notes": "专辑介绍文本（取库内备注）",
+      "musicBrainzId": "",
+      "lastFmUrl": "",
+      "smallImageUrl": "http://example.com/rest/getCoverArt?id=al-album-uuid&size=300",
+      "mediumImageUrl": "http://example.com/rest/getCoverArt?id=al-album-uuid&size=600",
+      "largeImageUrl": "http://example.com/rest/getCoverArt?id=al-album-uuid&size=1200"
+    },
+    "status": "ok",
+    "version": "1.16.1",
+    "serverVersion": "1.2.5",
+    "openSubsonic": true,
+    "type": "MusicFree"
+  }
+}
+```
+
+---
+
+## getAlbumInfo2
+
+语义与 `getAlbumInfo` 相同（别名）；根字段仍为 `albumInfo`。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/getAlbumInfo2`
+
+- 入参与响应：同「getAlbumInfo」一节。
 
 ---
 
@@ -712,7 +764,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -827,7 +879,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -865,7 +917,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -910,7 +962,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -953,7 +1005,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -997,7 +1049,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1034,7 +1086,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1076,7 +1128,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1121,7 +1173,7 @@ MusicFree 实现的 OpenSubsonic / Subsonic 兼容接口说明，如果相关接
       "artist": [],
       "song": []
     },
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "status": "ok",
     "type": "MusicFree",
     "version": "1.16.1"
@@ -1199,7 +1251,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
         }
       ]
     },
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "status": "ok",
     "type": "MusicFree",
     "version": "1.16.1"
@@ -1247,7 +1299,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1294,12 +1346,116 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
 }
 ```
+
+---
+
+## getBookmarks
+
+返回当前用户的播放书签（按曲目记录播放位置）。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/getBookmarks`
+
+- 入参
+
+| 名称     | 描述           | 默认值 |
+| -------- | -------------- | ------ |
+| （认证） | 见「通用入参」 |        |
+| `f`      |                |        |
+
+- 响应示例
+
+```json
+{
+  "subsonic-response": {
+    "bookmarks": {
+      "bookmark": [
+        {
+          "entry": {
+            "id": "song-uuid",
+            "title": "反方向的钟",
+            "duration": 258,
+            "bookmarkPosition": 30000
+          },
+          "position": 30000,
+          "username": "admin",
+          "comment": "",
+          "created": "2026-04-01T08:00:00Z",
+          "changed": "2026-04-01T08:00:00Z"
+        }
+      ]
+    },
+    "status": "ok",
+    "version": "1.16.1",
+    "serverVersion": "1.2.5",
+    "openSubsonic": true,
+    "type": "MusicFree"
+  }
+}
+```
+
+---
+
+## createBookmark
+
+为曲目创建或更新书签（同曲目重复调用会更新位置）。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/createBookmark`
+
+- 入参
+
+| 名称       | 描述                           | 默认值   |
+| ---------- | ------------------------------ | -------- |
+| （认证）   | 见「通用入参」                 |          |
+| `id`       | 歌曲 ID                        | **必填** |
+| `position` | 播放位置（毫秒，Subsonic 规范） | **必填** |
+| `comment`  | 备注                           |          |
+| `f`        |                                |          |
+
+- 响应示例（空载荷成功）
+
+```json
+{
+  "subsonic-response": {
+    "status": "ok",
+    "version": "1.16.1",
+    "serverVersion": "1.2.5",
+    "openSubsonic": true,
+    "type": "MusicFree"
+  }
+}
+```
+
+曲目不存在时返回错误码 `70`。
+
+---
+
+## deleteBookmark
+
+删除当前用户对指定曲目的书签。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/deleteBookmark`
+
+- 入参
+
+| 名称     | 描述           | 默认值   |
+| -------- | -------------- | -------- |
+| （认证） | 见「通用入参」 |          |
+| `id`     | 歌曲 ID        | **必填** |
+| `f`      |                |          |
+
+- 响应示例：同「createBookmark」（空载荷成功）。
 
 ---
 
@@ -1326,7 +1482,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
   "subsonic-response": {
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1383,7 +1539,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1414,7 +1570,75 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
+    "openSubsonic": true,
+    "type": "MusicFree"
+  }
+}
+```
+
+---
+
+## setRating
+
+为 **歌曲 / 专辑 / 艺术家** 设置评分（`0`–`5`，`0` 表示清除）。服务端按 `id` 依次匹配歌曲、专辑、艺术家。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/setRating`
+
+- 入参
+
+| 名称     | 描述                     | 默认值   |
+| -------- | ------------------------ | -------- |
+| （认证） | 见「通用入参」           |          |
+| `id`     | 歌曲 / 专辑 / 艺术家 ID  | **必填** |
+| `rating` | 评分，`0`–`5`            | **必填** |
+| `f`      |                          |          |
+
+- 响应示例（空载荷成功）
+
+```json
+{
+  "subsonic-response": {
+    "status": "ok",
+    "version": "1.16.1",
+    "serverVersion": "1.2.5",
+    "openSubsonic": true,
+    "type": "MusicFree"
+  }
+}
+```
+
+目标不存在时返回错误码 `70`。
+
+---
+
+## getRating
+
+返回当前用户对指定对象的评分（未评分返回 `0`）。
+
+- HTTP方法：`GET`、`POST`
+
+- 请求url：`http://example.com/rest/getRating`
+
+- 入参
+
+| 名称     | 描述                    | 默认值   |
+| -------- | ----------------------- | -------- |
+| （认证） | 见「通用入参」          |          |
+| `id`     | 歌曲 / 专辑 / 艺术家 ID | **必填** |
+| `f`      |                         |          |
+
+- 响应示例
+
+```json
+{
+  "subsonic-response": {
+    "rating": { "rating": 4 },
+    "status": "ok",
+    "version": "1.16.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1449,7 +1673,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
   "subsonic-response": {
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1481,7 +1705,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     "scanStatus": { "scanning": true, "message": "Full scan started" },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1517,7 +1741,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1548,7 +1772,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     },
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }
@@ -1575,7 +1799,7 @@ OpenSubsonic 推荐语义；结果为 `searchResult3`。
     "message": "Cleanup started",
     "status": "ok",
     "version": "1.16.1",
-    "serverVersion": "0.1.1",
+    "serverVersion": "1.2.5",
     "openSubsonic": true,
     "type": "MusicFree"
   }

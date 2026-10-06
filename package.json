@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "dayjs": "^1.11.21",
-    "mermaid": "^11.16.1",
+    "dayjs": "^1.11.23",
+    "mermaid": "^11.17.2",
     "vitepress": "2.0.0-alpha.17",
     "vitepress-plugin-mermaid": "^2.0.17"
   },

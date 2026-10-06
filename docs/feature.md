@@ -20,6 +20,8 @@ MusicFree提供音乐全生命周期的管理能力：
 - 从 **去重** 到多格式 **播放**，完整的曲库维护
 - 从 **封面** 到 **歌词** 的刮削，补全歌曲信息
 - 支持各平台 **歌单同步**（链接导入与定时同步）
+- 支持 **MusicFreeServe 集成**：歌单同步、共享、订阅与发现歌单
+- 支持 **音乐分享与下载**，与他人互通曲库
 - 支持艺术家、专辑的 **匹配与刮削**，自动补全头像与简介
 
 上述扩展能力均通过 **[插件](/plugin)** 实现，可按需订阅注册表、安装不同插件组合。
@@ -30,6 +32,9 @@ MusicFree提供音乐全生命周期的管理能力：
 | 专辑浏览与专辑级刮削   | [专辑](/album)                                                                |
 | 艺术家与批量头像       | [艺术家](/artist)                                                             |
 | 歌单导入与同步         | [歌单](/playlist)                                                             |
+| MusicFreeServe 集成    | [MusicFreeServe 集成](/serve)                                                 |
+| Music Assistant 集成   | [Music Assistant 集成](/music-assistant)                                       |
+| 音乐分享与下载         | [音乐分享](/share)                                                            |
 | 插件安装与编排         | [插件](/plugin) · [注册表](/plugin-registry) · [插件合集](/plugin-collection) |
 
 ## 兼容性
@@ -53,11 +58,13 @@ services:
     container_name: music-free
     restart: unless-stopped
     ports:
-      - "4533:4533"
+      - "14533:14533"
     volumes:
       - /vol1/docker/music-free:/app/data
       - /vol1/music:/app/music
 ```
+
+> 服务默认监听端口为 `14533`。如需使用 **音乐分享** 功能，Docker 部署需改用 **host 网络模式**（`network_mode: host`）。详见 [音乐分享](/share)。
 
 默认账号/密码：admin / admin
 部署后尽快修改密码（见 [用户模块](/user)）。
