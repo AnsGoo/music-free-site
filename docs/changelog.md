@@ -52,6 +52,16 @@ MusicFree 现在可作为 [music-free-serve](https://github.com/AnsGoo/music-fre
 
 详见 [MusicFreeServe 集成](/serve)。
 
+![share-playlist.webp](https://ansgoo.github.io/music-free-site/img/share-playlist.webp)
+
+![playlist-share.webp](https://ansgoo.github.io/music-free-site/img/playlist-share.webp)
+
+![platform-playlist.webp](https://ansgoo.github.io/music-free-site/img/platform-playlist.webp)
+
+![platform-playlist-detail.webp](https://ansgoo.github.io/music-free-site/img/platform-playlist-detail.webp)
+
+![recommend-playlist.webp](https://ansgoo.github.io/music-free-site/img/recommend-playlist.webp)
+
 #### 音乐分享与下载
 
 新增音乐分享能力：可把本地曲库中的歌曲、歌单分享出去，其他用户可直接下载并自动入库。功能默认关闭，需在「用户配置 → 音乐分享」中显式开启。
@@ -63,6 +73,8 @@ MusicFree 现在可作为 [music-free-serve](https://github.com/AnsGoo/music-fre
 
 详见 [音乐分享](/share)。
 
+![peer-swarm-config.webp](https://ansgoo.github.io/music-free-site/img/peer-swarm-config.webp)
+
 #### 歌单描述
 
 创建与编辑歌单时新增「描述」字段，可在详情页展示简介，方便整理与分享。
@@ -72,6 +84,8 @@ MusicFree 现在可作为 [music-free-serve](https://github.com/AnsGoo/music-fre
 - 「用户设置」页重构为标签页布局，将音乐配置与分享设置分区管理。
 - MusicFreeServe 配置支持**实时检测连通性**，可即时测试地址与 API Key。
 - 开启音乐分享前会校验 MusicFreeServe 配置完整性。
+
+![server-config.webp](https://ansgoo.github.io/music-free-site/img/server-config.webp)
 
 #### 音频元信息与播放记录完善
 
