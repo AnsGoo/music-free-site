@@ -6,7 +6,9 @@ outline: deep
 
 **插件是 MusicFree 的核心扩展机制**：平台搜索下载、元数据刮削、歌单导入等能力均由第三方 WASM 插件提供，通过 [插件注册表](/plugin-registry) 订阅安装。
 
-相关文档：[注册表](/plugin-registry) · [第三方插件合集](/plugin-collection) · [插件编排](/plugin-orchestration) · [插件开发](/plugin-development)
+> 在线搜索与下载还有一套并列机制：**洛雪音源（LX Music）自定义 `.js` 脚本**，支持在线试听，不依赖 WASM 插件、两者互不影响。见 [洛雪音源](/lx-source)。
+
+相关文档：[注册表](/plugin-registry) · [第三方插件合集](/plugin-collection) · [插件编排](/plugin-orchestration) · [插件开发](/plugin-development) · [洛雪音源](/lx-source)
 
 ## 插件提供的能力
 
@@ -18,7 +20,7 @@ outline: deep
 | 艺术家信息与头像       | `GetArtistInfo`                        | 同上刮削类插件                              |
 | 歌单 URL 导入 / 同步   | `FetchPlaylist`                        | `mf-plugin-netease`、`mf-plugin-qqmusic` 等 |
 
-后期与第三方平台的交互也将主要通过插件扩展。
+后期与第三方平台的交互也将主要通过插件扩展；洛雪音源是另一条并列的音源接入路径。
 
 ![](/img/remote-seach.webp)
 

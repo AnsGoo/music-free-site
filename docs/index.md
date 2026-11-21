@@ -29,7 +29,7 @@ mfFeatures:
     linkText: 刮削说明
   - iconKey: plugin
     title: 无限可能的插件化扩展方案
-    details: 远程搜索与下载、平台歌单导入、多数据源刮削；订阅注册表、安装 WASM 插件即可扩展能力，无需改核心。
+    details: 远程搜索与下载、平台歌单导入、多数据源刮削；订阅注册表安装 WASM 插件即可扩展能力，也可接入洛雪音源脚本，实现在线试听与入库，无需改核心。
     link: /plugin
     linkText: 插件体系
 

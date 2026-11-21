@@ -30,6 +30,7 @@ export default withMermaid(
         { text: "特性", link: "/feature" },
         { text: "扩展", link: "/plugin" },
         { text: "集成", link: "/serve" },
+        { text: "客户端", link: "/music-fly" },
         { text: "发布日志", link: "/changelog" },
       ],
 
@@ -53,9 +54,11 @@ export default withMermaid(
             {
               text: "生态集成",
               items: [
+                { text: "MusicFly 客户端", link: "/music-fly" },
+                { text: "洛雪音源集成", link: "/lx-source" },
                 { text: "MusicFreeServe 集成", link: "/serve" },
                 { text: "Music Assistant 集成", link: "/music-assistant" },
-                { text: "音乐分享", link: "/share" },
+                { text: "音乐分享集成", link: "/share" },
               ],
             },
             {
